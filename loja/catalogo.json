@@ -2,6 +2,16 @@
   "versao": 1,
   "apps": [
     {
+      "id": "pradaria",
+      "nome": "Pradaria",
+      "pacote": "br.smarttvia.pradaria",
+      "descricao": "O jogo de construir e explorar, como app da TV: tem motor de navegador próprio, então não fecha sozinho como no navegador da TV.",
+      "fonte": "Smart TV Krano (próprio)",
+      "apk": {
+        "armeabi-v7a": "https://raw.githubusercontent.com/smartryangg-cmyk/smart-tv-ia-releases/main/pradaria/pradaria-tv.apk"
+      }
+    },
+    {
       "id": "stremio",
       "nome": "Stremio",
       "pacote": "com.stremio.one",
