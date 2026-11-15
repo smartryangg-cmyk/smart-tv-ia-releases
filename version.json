@@ -1,1 +1,1 @@
-{"versionCode": 23, "versionName": "0.7.7", "sha256": "fbfb886bd08190c9dd3e27678e96160cb8e4a5aaa9d566543166b3dac8027ac9", "notes": "Videos do YouTube passam a tocar pela rede do app. Apps do Google que nao funcionam saem da tela inicial."}
+{"versionCode": 24, "versionName": "0.7.8", "sha256": "fa320f5bc36396071551176a2ae017019f8389d1dfb73cb28e139090c949eefd", "notes": "Nova loja de apps: Stremio, VLC, Jellyfin, Firefox e outros, todos de fonte oficial ou codigo aberto."}
