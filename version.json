@@ -1,1 +1,1 @@
-{"versionCode": 8, "versionName": "0.5.3", "sha256": "dc48d502665c34c96323a386b5da49aca5654da6d1323415b79552db6bfd9592", "notes": "Bloqueador de anuncios, busca de filmes, espelhamento do celular e erros detalhados na tela de atualizacao."}
+{"versionCode": 9, "versionName": "0.6.0", "sha256": "f4a2d3802c241dd6d627595f5cb640fffc4a7eb2dfc8bbbcd6af081d0e69ce80", "notes": "Tela inicial simples: Favoritos, Entradas e Apps. Ferramentas foram para Configuracoes (engrenagem). Mais leve e fluida."}
