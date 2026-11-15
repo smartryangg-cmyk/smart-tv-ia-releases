@@ -61,6 +61,14 @@
       "descricao": "Joga na TV os jogos do seu PC (precisa de placa NVIDIA ou do Sunshine no PC).",
       "fonte": "F-Droid (código aberto)",
       "fdroid": "com.limelight"
+    },
+    {
+      "id": "seekee",
+      "nome": "Seekee",
+      "pacote": "com.enzo.paulo",
+      "descricao": "Buscador e assistente com IA: pesquisa, tradução, resumos e estudos.",
+      "fonte": "seekee.ai (oficial)",
+      "pagina": "https://www.seekee.ai/"
     }
   ]
 }
