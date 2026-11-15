@@ -1,1 +1,1 @@
-{"versionCode": 28, "versionName": "0.8.2", "sha256": "0827259f8fc4eb12d71f6d7bcd2b4315160bb13d29484ba832b9fe8a5513a055", "notes": "YouTube em 720p, com troca de qualidade pela seta para baixo. A tela inicial volta quando a TV liga do modo de espera."}
+{"versionCode": 29, "versionName": "0.8.3", "sha256": "25b63ad9a0caeb9132af735cffdac7557f4b1c3bc1d0d9830bcdeca9a0aa7b96", "notes": "Filmes e Series: instale add-ons pela URL do manifest, como no Stremio. Tela inicial sem os apps de sistema que nao funcionam."}
