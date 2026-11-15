@@ -1,1 +1,1 @@
-{"versionCode": 11, "versionName": "0.6.2", "sha256": "7d7b54f3853afc5dfb9c2725bc1c2a36cf79b61099d68e049328b4f2fb01c033", "notes": "Navegador roda separado: se a WebView da TV travar, o launcher continua."}
+{"versionCode": 12, "versionName": "0.6.3", "sha256": "b8cd31664e4e6b46c5a1e348d50b1f58c2af7131bedff7675140bcba43da9374", "notes": "Modo sem Google: o SmartTube entra no lugar do YouTube. Configurações > Google mostra como desligar/restaurar."}
