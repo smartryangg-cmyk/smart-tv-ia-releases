@@ -1,1 +1,1 @@
-{"versionCode": 14, "versionName": "0.6.5", "sha256": "82232603eaafdca5f706728a35293f73600a585588da21ff67dbecdedcfd5606", "notes": "Ao ligar, a TV volta para a tela inicial mesmo se abrir no AV."}
+{"versionCode": 15, "versionName": "0.6.6", "sha256": "038bfc3e1fed442c49ff32366691704719b22684d3586f74006aefc9c012a508", "notes": "Atualização automática: baixa sozinha e só pede OK na tela inicial."}
