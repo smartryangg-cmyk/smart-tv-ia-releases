@@ -1,1 +1,1 @@
-{"versionCode": 10, "versionName": "0.6.1", "sha256": "e8c327397d3b6c7d88248e7ea43f548d1c431efabc5cc5cc9199e85a1cece75e", "notes": "Assistência remota (Configurações > Sobre o app). Atualização automática sem pedir OK quando configurada pelo PC."}
+{"versionCode": 11, "versionName": "0.6.2", "sha256": "7d7b54f3853afc5dfb9c2725bc1c2a36cf79b61099d68e049328b4f2fb01c033", "notes": "Navegador roda separado: se a WebView da TV travar, o launcher continua."}
