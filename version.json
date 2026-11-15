@@ -1,1 +1,1 @@
-{"versionCode": 20, "versionName": "0.7.4", "sha256": "572e768ee875d897f93f6f1bfee56e3e250c14207ae86c2a21c579a4377865f6", "notes": "YouTube rapido: o app passa a usar o endereco de internet que responde. Navegador mais resistente."}
+{"versionCode": 21, "versionName": "0.7.5", "sha256": "9a388bbb983f15866b3a4a46c2d03fe441345524f29d4e50e6ab3ae13f8b1538", "notes": "O app passa a achar os sites mesmo quando o DNS da TV falha. Atualizacao mais confiavel."}
