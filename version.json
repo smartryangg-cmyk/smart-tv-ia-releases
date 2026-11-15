@@ -1,1 +1,1 @@
-{"versionCode": 29, "versionName": "0.8.3", "sha256": "25b63ad9a0caeb9132af735cffdac7557f4b1c3bc1d0d9830bcdeca9a0aa7b96", "notes": "Filmes e Series: instale add-ons pela URL do manifest, como no Stremio. Tela inicial sem os apps de sistema que nao funcionam."}
+{"versionCode": 30, "versionName": "0.8.4", "sha256": "b2501543d41b554f10b5cc251c486894c47dd42dcc79ec2eab473d659153eea4", "notes": "O jogo agora pede para instalar o Firefox pela Loja, em vez de abrir no navegador que fecha sozinho."}
