@@ -9,9 +9,10 @@
   pré-compilado (otimização ART) estragado. Sem o Play Services, o YouTube, a Play Store e o login
   dos apps não funcionam.
 
-  Etapa 1 (padrão, não apaga nada): descarta o código pré-compilado do Play Services, YouTube,
-  Play Store e Netflix e manda o Android recompilar a partir do APK original. Reinicia a TV e
-  confere se o Play Services ainda trava.
+  Etapa 1 (padrão, não apaga nada): força o Android a compilar de novo, do zero, o Play Services,
+  o YouTube, a Play Store e a Netflix contra o sistema atual da TV (cmd package compile -m speed -f).
+  O código de fábrica que vem pronto não bate com o sistema da TV ("Didn't find oat method index").
+  Demora: o Play Services pode levar 5 a 15 minutos. Depois reinicia a TV e confere se ainda trava.
   Etapa 2 (-LimparDados): além disso, limpa os dados do Play Services e da Play Store, igual a
   "Limpar dados" nas Configurações. A conta Google continua na TV; o Play Services baixa os módulos
   de novo sozinho.
@@ -82,11 +83,16 @@ foreach ($p in $Pacotes) {
     Escreve "   ${p}: $v"
 }
 
-Escreve '-- Etapa 1: recompilar a partir do APK original (não apaga dados)' 'Cyan'
+Escreve '-- Etapa 1: compilar de novo, do zero, contra o sistema atual (não apaga dados)' 'Cyan'
+Escreve '   Isso demora. Não desligue a TV. O Play Services pode levar até 15 minutos.' 'Yellow'
 foreach ($p in $Pacotes) {
-    $r = Adb @('shell', 'cmd', 'package', 'compile', '--reset', $p)
-    Escreve "   $p -> $r"
+    $t0 = Get-Date
+    $r = Adb @('shell', 'cmd', 'package', 'compile', '-m', 'speed', '-f', $p)
+    $seg = [int]((Get-Date) - $t0).TotalSeconds
+    Escreve "   $p -> $r ($seg s)"
 }
+$r = Adb @('shell', "dumpsys package dexopt | grep -A3 'com.google.android.gms]'")
+Escreve "   estado do Play Services: $r"
 
 if ($LimparDados) {
     Escreve '-- Etapa 2: limpar dados do Play Services e da Play Store' 'Cyan'
