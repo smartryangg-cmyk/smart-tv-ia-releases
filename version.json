@@ -1,1 +1,1 @@
-{"versionCode": 26, "versionName": "0.8.0", "sha256": "485780c2590d6fb5eb0fd35ba796d2e866e5a359c6d2ef921ec2a50e2fdcaba7", "notes": "O jogo abre no Firefox quando ele esta instalado (pela Loja). Relatorios de erro mais confiaveis."}
+{"versionCode": 27, "versionName": "0.8.1", "sha256": "0f8cc63ac2a79355d9391a80fbb8475646907b6e0cca0f9b95fc7e030e33f33c", "notes": "Loja corrigida: baixa a versao certa para o processador da TV e mostra o motivo se nao instalar. Seekee na Loja."}
