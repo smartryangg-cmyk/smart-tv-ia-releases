@@ -1,0 +1,66 @@
+{
+  "versao": 1,
+  "apps": [
+    {
+      "id": "stremio",
+      "nome": "Stremio",
+      "pacote": "com.stremio.one",
+      "descricao": "Central de filmes, séries e canais. Versão oficial para Android TV.",
+      "fonte": "stremio.com (oficial)",
+      "apk": {
+        "armeabi-v7a": "https://dl.strem.io/android/v1.10.4-androidTV/com.stremio.one-1.10.4-31048580-armeabi-v7a.apk",
+        "arm64-v8a": "https://dl.strem.io/android/v1.10.4-androidTV/com.stremio.one-1.10.4-33145732-arm64-v8a.apk",
+        "x86": "https://dl.strem.io/android/v1.10.4-androidTV/com.stremio.one-1.10.4-32097156-x86.apk",
+        "x86_64": "https://dl.strem.io/android/v1.10.4-androidTV/com.stremio.one-1.10.4-34194308-x86_64.apk"
+      }
+    },
+    {
+      "id": "vlc",
+      "nome": "VLC",
+      "pacote": "org.videolan.vlc",
+      "descricao": "Toca quase qualquer vídeo ou música, do pendrive ou da rede. Tem tela própria para TV.",
+      "fonte": "F-Droid (código aberto)",
+      "fdroid": "org.videolan.vlc"
+    },
+    {
+      "id": "jellyfin",
+      "nome": "Jellyfin",
+      "pacote": "org.jellyfin.androidtv",
+      "descricao": "Assiste os filmes e séries do seu próprio servidor Jellyfin.",
+      "fonte": "F-Droid (código aberto)",
+      "fdroid": "org.jellyfin.androidtv"
+    },
+    {
+      "id": "fennec",
+      "nome": "Navegador Firefox (Fennec)",
+      "pacote": "org.mozilla.fennec_fdroid",
+      "descricao": "Navegador com motor próprio: não usa o WebView da TV, que fecha sozinho.",
+      "fonte": "F-Droid (código aberto)",
+      "fdroid": "org.mozilla.fennec_fdroid"
+    },
+    {
+      "id": "newpipe",
+      "nome": "NewPipe",
+      "pacote": "org.schabi.newpipe",
+      "descricao": "Outro jeito de ver YouTube sem o Google, com downloads e listas.",
+      "fonte": "F-Droid (código aberto)",
+      "fdroid": "org.schabi.newpipe"
+    },
+    {
+      "id": "radiodroid",
+      "nome": "RadioDroid",
+      "pacote": "net.programmierecke.radiodroid2",
+      "descricao": "Milhares de rádios da internet, do Brasil e do mundo.",
+      "fonte": "F-Droid (código aberto)",
+      "fdroid": "net.programmierecke.radiodroid2"
+    },
+    {
+      "id": "moonlight",
+      "nome": "Moonlight",
+      "pacote": "com.limelight",
+      "descricao": "Joga na TV os jogos do seu PC (precisa de placa NVIDIA ou do Sunshine no PC).",
+      "fonte": "F-Droid (código aberto)",
+      "fdroid": "com.limelight"
+    }
+  ]
+}
