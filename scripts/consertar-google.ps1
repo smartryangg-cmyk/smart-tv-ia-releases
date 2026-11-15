@@ -32,7 +32,7 @@ param(
 )
 
 Set-StrictMode -Version 2
-$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Continue'
 try { [Console]::OutputEncoding = [System.Text.Encoding]::UTF8 } catch { }
 
 $Pacotes = @('com.google.android.gms', 'com.google.android.youtube.tv', 'com.android.vending', 'com.netflix.ninja')
@@ -57,14 +57,21 @@ function Acha-Adb {
 $AdbExe = Acha-Adb
 
 function Adb([string[]]$a) {
-    $saida = & $AdbExe -s $Alvo @a 2>&1 | Out-String
+    # No PowerShell 5.1 o stderr do adb vira erro; aqui ele é só texto.
+    $antes = $ErrorActionPreference
+    $ErrorActionPreference = 'Continue'
+    try {
+        $saida = & $AdbExe -s $Alvo @a 2>&1 | ForEach-Object { "$_" } | Out-String
+    } finally {
+        $ErrorActionPreference = $antes
+    }
     return $saida.Trim()
 }
 
 function Conecta([int]$tentativas) {
     for ($i = 0; $i -lt $tentativas; $i++) {
         & $AdbExe connect $Alvo 2>&1 | Out-Null
-        $estado = (& $AdbExe -s $Alvo get-state 2>&1 | Out-String).Trim()
+        $estado = (& $AdbExe -s $Alvo get-state 2>&1 | ForEach-Object { "$_" } | Out-String).Trim()
         if ($estado -eq 'device') { return $true }
         Start-Sleep -Seconds 5
     }
@@ -79,7 +86,7 @@ if (-not (Conecta 3)) {
 
 Escreve '-- Versões antes:'
 foreach ($p in $Pacotes) {
-    $v = Adb @('shell', "dumpsys package $p | grep -m1 versionName")
+    $v = Adb @('shell', "dumpsys package $p 2>/dev/null | grep versionName")
     Escreve "   ${p}: $v"
 }
 
@@ -91,7 +98,7 @@ foreach ($p in $Pacotes) {
     $seg = [int]((Get-Date) - $t0).TotalSeconds
     Escreve "   $p -> $r ($seg s)"
 }
-$r = Adb @('shell', "dumpsys package dexopt | grep -A3 'com.google.android.gms]'")
+$r = Adb @('shell', "dumpsys package dexopt 2>/dev/null | grep -A3 'com.google.android.gms]'")
 Escreve "   estado do Play Services: $r"
 
 if ($LimparDados) {
