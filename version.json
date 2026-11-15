@@ -1,1 +1,1 @@
-{"versionCode": 16, "versionName": "0.7.0", "sha256": "1fb99d715be5beb672e2733714b16a2d0e0a2d2896b0f4d4f7c8a5cc0a154f4e", "notes": "YouTube embutido no app: funciona sem Google e sem o navegador do sistema."}
+{"versionCode": 17, "versionName": "0.7.1", "sha256": "95b1218f83d6d4c3bdeff6b8e78d06969c27021587e1a0b1d209344decb9c874", "notes": "O app passa a enviar sozinho o motivo quando uma tela fecha, para a correção sair mais rápido."}
