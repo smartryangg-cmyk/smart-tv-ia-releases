@@ -1,1 +1,1 @@
-{"versionCode": 27, "versionName": "0.8.1", "sha256": "0f8cc63ac2a79355d9391a80fbb8475646907b6e0cca0f9b95fc7e030e33f33c", "notes": "Loja corrigida: baixa a versao certa para o processador da TV e mostra o motivo se nao instalar. Seekee na Loja."}
+{"versionCode": 28, "versionName": "0.8.2", "sha256": "0827259f8fc4eb12d71f6d7bcd2b4315160bb13d29484ba832b9fe8a5513a055", "notes": "YouTube em 720p, com troca de qualidade pela seta para baixo. A tela inicial volta quando a TV liga do modo de espera."}
