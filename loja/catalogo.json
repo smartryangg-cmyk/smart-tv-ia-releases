@@ -12,6 +12,16 @@
       }
     },
     {
+      "id": "navegador",
+      "nome": "Navegador",
+      "pacote": "br.smarttvia.navegador",
+      "descricao": "Navegador de sites com motor próprio (o do Firefox), feito para o controle remoto. Não usa o navegador do sistema, que fecha sozinho nesta TV.",
+      "fonte": "Smart TV Krano (próprio)",
+      "apk": {
+        "armeabi-v7a": "https://raw.githubusercontent.com/smartryangg-cmyk/smart-tv-ia-releases/main/navegador/navegador-tv.apk"
+      }
+    },
+    {
       "id": "stremio",
       "nome": "Stremio",
       "pacote": "com.stremio.one",
